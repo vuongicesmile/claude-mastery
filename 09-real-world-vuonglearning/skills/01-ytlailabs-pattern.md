@@ -1,36 +1,36 @@
-# Pattern: Skills System — YTL AI Labs Plugin
+# Pattern: Skills System — VuongLearning Plugin
 
-## Cách ilmuchat dùng Skills
+## Cách vuonglearning dùng Skills
 
 CLAUDE.md có bảng "Skill Priority" — bắt Claude dùng skill thay vì tự làm:
 
 ```markdown
-## YTL AI Labs Skills & Agents
+## VuongLearning Skills & Agents
 
 ### Skill & Command Priority
-When a ytlailabs skill or command exists for the task, **always prefer it**:
+When a vuonglearning skill or command exists for the task, **always prefer it**:
 
 | Task | Use This | Not This |
 |------|----------|----------|
-| Planning | `/ytlailabs:plan` | ad-hoc planning |
-| TDD | `/ytlailabs:tdd` | writing tests without workflow |
-| Code review | `/ytlailabs:code-review` | manual review |
-| Build errors | `/ytlailabs:build-fix` | guessing at fixes |
-| E2E tests | `/ytlailabs:e2e` | writing Playwright from scratch |
-| Security scan | `/ytlailabs:security-scan` | manual checklist |
+| Planning | `/vuonglearning:plan` | ad-hoc planning |
+| TDD | `/vuonglearning:tdd` | writing tests without workflow |
+| Code review | `/vuonglearning:code-review` | manual review |
+| Build errors | `/vuonglearning:build-fix` | guessing at fixes |
+| E2E tests | `/vuonglearning:e2e` | writing Playwright from scratch |
+| Security scan | `/vuonglearning:security-scan` | manual checklist |
 
 ### Agent Delegation
-For sub-agent work, prefer `ytlailabs:*` agents:
-- `ytlailabs:code-reviewer` over generic `code-reviewer`
-- `ytlailabs:tdd-guide` over generic `tdd-guide`
-- `ytlailabs:architect` over generic `architect`
+For sub-agent work, prefer `vuonglearning:*` agents:
+- `vuonglearning:code-reviewer` over generic `code-reviewer`
+- `vuonglearning:tdd-guide` over generic `tdd-guide`
+- `vuonglearning:architect` over generic `architect`
 ```
 
 **Result:** Claude không tự "freestyle" — luôn follow đúng process của team.
 
 ## Anatomy của một Production Skill
 
-Skill `/ytlailabs:tdd` thực tế:
+Skill `/vuonglearning:tdd` thực tế:
 
 ```markdown
 ---
@@ -123,7 +123,7 @@ except DatabaseError as e:
 
 ## Rules Files — Auto-loaded Standards
 
-ilmuchat có 7 rule files trong `.claude/rules/` — tự động load vào mọi session:
+vuonglearning có 7 rule files trong `.claude/rules/` — tự động load vào mọi session:
 
 ```
 pre-push.md         → nhắc chạy lint + test trước push

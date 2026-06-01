@@ -1,4 +1,4 @@
-# Key Lessons — What Makes ilmuchat's Claude Setup Effective
+# Key Lessons — What Makes vuonglearning's Claude Setup Effective
 
 ## Lesson 1: "What NOT to do" > "What to do"
 

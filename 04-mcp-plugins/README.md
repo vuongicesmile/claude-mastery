@@ -78,7 +78,7 @@ mcp-server-notion       # Notion pages
 Sau khi config GitHub MCP:
 
 ```
-"Show me all open PRs in frogasia/ilmuchat"
+"Show me all open PRs in vuonglearning/vuonglearning"
 "Find issues labeled 'bug' from last week"
 "What changed in the auth module in the last 10 commits?"
 "Create an issue: [title and description]"

@@ -1,13 +1,13 @@
 # Pattern: Custom Slash Commands — Audit System
 
-## ilmuchat có 20+ audit commands
+## vuonglearning có 20+ audit commands
 
 Tất cả trong `.claude/commands/`. Invoke bằng `/audit-security`, `/audit-performance`, etc.
 
 ## audit-security.md (thực tế)
 
 ```markdown
-Perform a comprehensive security audit of the ilmuchat codebase.
+Perform a comprehensive security audit of the vuonglearning codebase.
 
 Focus areas:
 1. Authentication & Authorization
@@ -44,7 +44,7 @@ For each: location, description, attack vector, remediation
 ## audit-performance.md
 
 ```markdown
-Analyze ilmuchat for performance issues.
+Analyze vuonglearning for performance issues.
 
 Check:
 1. Database Queries
@@ -74,7 +74,7 @@ Report as: [SEVERITY] [COMPONENT] description + estimated impact
 ## audit-api-contracts.md
 
 ```markdown
-Verify all API contracts in ilmuchat are correct and consistent.
+Verify all API contracts in vuonglearning are correct and consistent.
 
 Check:
 1. OpenAPI Spec vs Implementation
@@ -91,7 +91,7 @@ Check:
      safety, reasoning, usage, error, done, stream_resumed, stream_resume_fallback
 
 4. Inter-Service Contracts
-   - ilmuchat-api → ai-service: POST /chat/completions fields
+   - vuonglearning-api → ai-service: POST /chat/completions fields
    - ai-service → ai-safety-service: POST /v1/evaluate fields
    - Internal endpoints match Internal API Key auth
 
@@ -135,6 +135,6 @@ Show the query, the issue, and the fix.
 |---|---|---|
 | **Scope** | Project-specific | Global (all projects) |
 | **Purpose** | Domain-specific audits | Generic workflows |
-| **Example** | /audit-ilmuchat-security | /tdd, /debug, /code-review |
+| **Example** | /audit-vuonglearning-security | /tdd, /debug, /code-review |
 | **Format** | Instructions only | Can include metadata, workflow |
 | **Best for** | "check THIS codebase for X" | "do X using this process" |

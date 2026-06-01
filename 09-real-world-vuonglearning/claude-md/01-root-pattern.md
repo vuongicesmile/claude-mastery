@@ -1,18 +1,18 @@
 # Pattern: Root CLAUDE.md
 
-## Tại sao ilmuchat có CLAUDE.md 1200+ dòng?
+## Tại sao vuonglearning có CLAUDE.md 1200+ dòng?
 
 Vì Claude **đọc lại từ đầu mỗi session**. File này trả lời trước tất cả câu hỏi Claude có thể hỏi.
 
 ## Structure thực tế
 
 ```markdown
-# ILMUchat — AI Coding Agent Instructions
+# VuongLearning — AI Coding Agent Instructions
 
 ## What This Is
 [mô tả project 2-3 dòng]
 
-## YTL AI Labs Skills & Agents
+## VuongLearning Skills & Agents
 [bảng skill nào dùng cho task nào]
 
 ## Layout

@@ -1,6 +1,6 @@
 # Pattern: Git Hooks — Automation Layer
 
-## ilmuchat dùng 3 hooks
+## vuonglearning dùng 3 hooks
 
 ```
 scripts/hooks/
@@ -58,7 +58,7 @@ if ! echo "$MSG" | grep -qE "$PATTERN"; then
 fi
 ```
 
-**Result:** Mọi commit trong ilmuchat đều có format:
+**Result:** Mọi commit trong vuonglearning đều có format:
 ```
 feat(api): add JWT refresh token rotation
 fix(web): prevent crash when user.email is null
@@ -72,7 +72,7 @@ refactor(ai-service): extract tool dispatch to separate module
 detect_changed_services() {
     local changed_files=$(git diff --cached --name-only)
     
-    echo "$changed_files" | grep -q "^services/ilmuchat-api/"  && echo "ilmuchat-api"
+    echo "$changed_files" | grep -q "^services/vuonglearning-api/"  && echo "vuonglearning-api"
     echo "$changed_files" | grep -q "^services/ai-service/"    && echo "ai-service"  
     echo "$changed_files" | grep -q "^services/ai-safety/"     && echo "ai-safety"
     echo "$changed_files" | grep -q "^clients/web/"            && echo "web"
@@ -82,7 +82,7 @@ detect_changed_services() {
 # Chỉ chạy checks cho service thay đổi
 for service in $(detect_changed_services); do
     case "$service" in
-        "ilmuchat-api") cd services/ilmuchat-api && make format-check typecheck ;;
+        "vuonglearning-api") cd services/vuonglearning-api && make format-check typecheck ;;
         "web")          cd clients/web && pnpm lint typecheck ;;
     esac
 done

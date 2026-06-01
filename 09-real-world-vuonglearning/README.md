@@ -1,12 +1,12 @@
-# Module 09 — Real World: How ilmuchat Uses Claude Code
+# Module 09 — Real World: How vuonglearning Uses Claude Code
 
-> Đây là cách Claude Code được dùng trong production tại YTL AI Labs.
+> Đây là cách Claude Code được dùng trong production tại VuongLearning.
 > Tất cả examples dưới đây là từ codebase thật, không phải demo.
 
 ## 📁 Cấu trúc thực tế
 
 ```
-ilmuchat/
+vuonglearning/
 ├── CLAUDE.md                    ← Global architecture guide (1200+ lines!)
 ├── .claude/
 │   ├── settings.local.json      ← Permission allowlist cho máy này
@@ -23,7 +23,7 @@ ilmuchat/
 │       ├── audit-performance.md
 │       └── ... (18 more)
 ├── services/
-│   ├── ilmuchat-api/CLAUDE.md   ← Per-service guide (2062 lines!)
+│   ├── vuonglearning-api/CLAUDE.md   ← Per-service guide (2062 lines!)
 │   ├── ai-service/CLAUDE.md
 │   └── .../CLAUDE.md
 └── scripts/hooks/               ← Git hooks
